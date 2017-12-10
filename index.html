@@ -51,13 +51,21 @@ a:hover{color:#fff;text-decoration:none;}
 #media{position:absolute;top:0;left:0;text-align:left;padding:1%;font-size:150%;}
 
 @media(max-width:800px){
-#topleft{width:50%;float:left;left:0;height:40%;top:30%;}
+#topleft{width:50%;float:left;left:0;height:40%;top:30%;background-color:teal;padding:0;}
 #topright{width:100%;float:left;left:0;height:30%;top:0;}
-#bottomleft{width:50%;float:right;left:50%;height:40%;top:30%;}
 #bottomleft{display:none;height:0;}
 #bottomright{width:100%;float:left;left:0;height:30%;top:70%;}
 #other{background-color:teal;font-weight:bold;color:#000;text-shadow:none;text-orientation:sideways;writing-mode:vertical-rl;padding:0;}
-#topleft{background-color:teal;padding:0;}
+}
+
+@media(max-width:500px){
+#topleft{display:none;height:0;}
+#bottomleft{display:none;height:0;}
+#bottomright{text-orientation:sideways;writing-mode:vertical-rl;padding:0;top:0;height:100%;width:50%;}
+.contactText{display:none;height:0;}
+#media > .fa{display:none;height:0;}
+#contact{width:100%;height:auto;writing-mode:horizontal-tb;top:0;padding:0;}
+.fa {writing-mode:horizontal-tb;}
 }
 
 </style>
@@ -72,25 +80,25 @@ a:hover{color:#fff;text-decoration:none;}
 <div id="topright">
 <div id="contact">
 
-<a href="http://mod7e.bandcamp.com">mod7e</a> <a href="http://mod7e.bandcamp.com" class="fa fa-bandcamp"></a><br />
-<a href="https://del.icio.us/purevil">purevil</a> <a href="https://del.icio.us/purevil" class="fa fa-delicious"></a><br />
-<a href="https://purevil.deviantart.com">purevil</a> <a href="https://purevil.deviantart.com" class="fa fa-deviantart"></a> <br />
-<a href="https://www.facebook.com/johnie.oneball.3">Johnie Oneball</a> <a href="https://www.facebook.com/johnie.oneball.3" class="fa fa-facebook-official"></a><br />
-<a href="https://www.flickr.com/people/mod7e/">mod7e</a> <a href="https://www.flickr.com/people/mod7e/" class="fa fa-flickr"></a><br />
-<a href="https://github.com/mod7e">mod7e</a> <a href="https://github.com/mod7e" class="fa fa-github"></a><br />
-<a href="https://www.goodreads.com/user/show/8590222-johnie1">johnie1</a> <a href="https://www.goodreads.com/user/show/8590222-johnie1" class="fa fa-book"></a><br />
-<a href="http://www.google.com/profiles/johnie.oneball">Johnie Oneball</a> <a href="http://www.google.com/profiles/johnie.oneball" class="fa fa-google-plus-official"></a><br />
-<a href="https://line.me/en/">mod7e</a> <a href="https://line.me/en/" class="fa fa-comment"></a><br />
-<a href="https://medium.com/@Robert.Booth.Hudson">Robert Booth-Hudson</a> <a href="https://medium.com/@Robert.Booth.Hudson" class="fa fa-medium"></a><br />
-<a href="https://my.secondlife.com/johnle.fukai">JohnLe Fukai</a> <a href="https://my.secondlife.com/johnle.fukai" class="fa fa-globe"></a><br />
-<a href="skype:johnlefucker?call">johnlefucker</a> <a href="skype:johnlefucker?call" class="fa fa-skype"></a><br />
-<a href="https://soundcloud.com/mod7e">mod7e</a> <a href="https://soundcloud.com/mod7e" class="fa fa-soundcloud"></a><br />
-<a href="http://twitter.com/JohnieOneball">JohnieOneball</a> <a href="http://twitter.com/JohnieOneball" class="fa fa-twitter"></a><br />
-<a href="https://vimeo.com/human">johnie1</a> <a href="https://vimeo.com/human" class="fa fa-vimeo"></a><br />
-<a href="https://vk.com/mod7e">mod7e</a> <a href="https://vk.com/mod7e" class="fa fa-vk"></a><br />
-<a href="weixin://dl/chat?JohnieOne">JohnieOne</a> <a href="weixin://dl/chat?JohnieOne" class="fa fa-weixin"></a><br />
-<a href="http://www.weibo.com/u/2603071630">johnie1</a> <a href="http://www.weibo.com/u/2603071630" class="fa fa-weibo"></a><br />
-<a href="https://www.youtube.com/user/JohnLeFucker">Johnie Oneball</a> <a href="https://www.youtube.com/user/JohnLeFucker" class="fa fa-youtube"></a><br />
+<span class="contactText"><a href="http://mod7e.bandcamp.com">mod7e</a></span> <a href="http://mod7e.bandcamp.com" class="fa fa-bandcamp"></a><br />
+<span class="contactText"><a href="https://del.icio.us/purevil">purevil</a></span> <a href="https://del.icio.us/purevil" class="fa fa-delicious"></a><br />
+<span class="contactText"><a href="https://purevil.deviantart.com">purevil</a></span> <a href="https://purevil.deviantart.com" class="fa fa-deviantart"></a> <br />
+<span class="contactText"><a href="https://www.facebook.com/johnie.oneball.3">Johnie Oneball</a></span> <a href="https://www.facebook.com/johnie.oneball.3" class="fa fa-facebook-official"></a><br />
+<span class="contactText"><a href="https://www.flickr.com/people/mod7e/">mod7e</a></span> <a href="https://www.flickr.com/people/mod7e/" class="fa fa-flickr"></a><br />
+<span class="contactText"><a href="https://github.com/mod7e">mod7e</a></span> <a href="https://github.com/mod7e" class="fa fa-github"></a><br />
+<span class="contactText"><a href="https://www.goodreads.com/user/show/8590222-johnie1">johnie1</a></span> <a href="https://www.goodreads.com/user/show/8590222-johnie1" class="fa fa-book"></a><br />
+<span class="contactText"><a href="http://www.google.com/profiles/johnie.oneball">Johnie Oneball</a></span> <a href="http://www.google.com/profiles/johnie.oneball" class="fa fa-google-plus-official"></a><br />
+<span class="contactText"><a href="https://line.me/en/">mod7e</a></span> <a href="https://line.me/en/" class="fa fa-comment"></a><br />
+<span class="contactText"><a href="https://medium.com/@Robert.Booth.Hudson">Robert Booth-Hudson</a></span> <a href="https://medium.com/@Robert.Booth.Hudson" class="fa fa-medium"></a><br />
+<span class="contactText"><a href="https://my.secondlife.com/johnle.fukai">JohnLe Fukai</a></span> <a href="https://my.secondlife.com/johnle.fukai" class="fa fa-globe"></a><br />
+<span class="contactText"><a href="skype:johnlefucker?call">johnlefucker</a></span> <a href="skype:johnlefucker?call" class="fa fa-skype"></a><br />
+<span class="contactText"><a href="https://soundcloud.com/mod7e">mod7e</a></span> <a href="https://soundcloud.com/mod7e" class="fa fa-soundcloud"></a><br />
+<span class="contactText"><a href="http://twitter.com/JohnieOneball">JohnieOneball</a></span> <a href="http://twitter.com/JohnieOneball" class="fa fa-twitter"></a><br />
+<span class="contactText"><a href="https://vimeo.com/human">johnie1</a></span> <a href="https://vimeo.com/human" class="fa fa-vimeo"></a><br />
+<span class="contactText"><a href="https://vk.com/mod7e">mod7e</a></span> <a href="https://vk.com/mod7e" class="fa fa-vk"></a><br />
+<span class="contactText"><a href="weixin://dl/chat?JohnieOne">JohnieOne</a></span> <a href="weixin://dl/chat?JohnieOne" class="fa fa-weixin"></a><br />
+<span class="contactText"><a href="http://www.weibo.com/u/2603071630">johnie1</a></span> <a href="http://www.weibo.com/u/2603071630" class="fa fa-weibo"></a><br />
+<span class="contactText"><a href="https://www.youtube.com/user/JohnLeFucker">Johnie Oneball</a></span> <a href="https://www.youtube.com/user/JohnLeFucker" class="fa fa-youtube"></a>
 
 <!--
 <a href=""></a> <a href="" class="fa fa-"></a><br />
@@ -114,11 +122,11 @@ a:hover{color:#fff;text-decoration:none;}
 <div id="bottomright">
 <div id="media">
 
-<a href="http://johnie.tech" class="fa fa-cube"></a> <a href="http://johnie.tech">johnie.tech</a><br />
-<a href="http://fear-of-a-average-mind.blogspot.com" class="fa fa-rss"></a> <a href="http://fear-of-a-average-mind.blogspot.com">Fear of (a) average mind</a><br />
 <a href="http://www.emmausbrighton.co.uk" class="fa fa-home"></a> <a href="http://www.emmausbrighton.co.uk">Sussex Emmaus</a>, Room 32, Drove Road, Portslade, Brighton, BN41 2PA<br />
+<a href="mailto:johnie.oneball@googlemail.com" class="fa fa-envelope"></a> <a href="mailto:johnie.oneball@googlemail.com">johnie.oneball@googlemail.com</a><br />
+<a href="http://fear-of-a-average-mind.blogspot.com" class="fa fa-rss"></a> <a href="http://fear-of-a-average-mind.blogspot.com">fear of (a) average mind</a><br />
 <a href="tel:07926771218" class="fa fa-phone"></a> <a href="tel:07926771218">07926771218</a><br />
-<a href="mailto:johnie.oneball@googlemail.com" class="fa fa-envelope"></a> <a href="mailto:johnie.oneball@googlemail.com">johnie.oneball@googlemail.com</a><br /><br />
+<a href="http://johnie.tech" class="fa fa-cube"></a> <a href="http://johnie.tech">johnie.tech</a><br />
 
 </div>
 </div>
